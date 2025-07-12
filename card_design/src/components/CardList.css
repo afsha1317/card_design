@@ -1,47 +1,116 @@
-.text-card-container {
+/* Card Layout */
+.new-card-container {
   display: flex;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 25px;
   justify-content: center;
-  padding: 30px;
+  padding: 40px;
 }
 
-.text-card {
-  background-color: #ffffff;
-  border-left: 6px solid #007bff;
-  padding: 20px 30px;
-  width: 250px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
-  text-align: left;
+.new-card {
+  width: 220px;
+  background: #fff;
+  border: 2px solid #007bff;
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.1);
 }
 
-.text-card:hover {
-  transform: translateY(-5px);
+.new-card:hover {
+  transform: translateY(-6px);
+  border-color: #0056b3;
 }
 
-.text-card h2 {
-  font-size: 20px;
-  margin-bottom: 8px;
-  color: #333;
+/* Avatar Placeholder */
+.avatar-placeholder {
+  width: 64px;
+  height: 64px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  font-size: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
 }
 
-.text-card p {
-  font-size: 16px;
-  margin-bottom: 15px;
-  color: #555;
+/* Text */
+.new-card h2 {
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 6px;
 }
 
-.text-card-btn {
+.new-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+/* Button */
+.card-btn {
   background-color: #007bff;
   color: white;
   border: none;
   padding: 8px 14px;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 13px;
 }
 
-.text-card-btn:hover {
+.card-btn:hover {
   background-color: #0056b3;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.modal-content p {
+  color: #444;
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.modal-content strong {
+  color: #222;
+}
+
+.close-btn {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-top: 15px;
 }
